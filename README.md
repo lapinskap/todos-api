@@ -29,6 +29,7 @@ bundle install
 
 ## Code Examples
 
+Request specs are designed to drive behavior through the full stack, including routing. This means they can hit the applications' HTTP endpoints as opposed to controller specs which call methods directly. Since we're building an API application, this is exactly the kind of behavior we want from our tests.
 
 > According to RSpec, the official recommendation of the Rails team and the RSpec core team is to write request specs instead.
 

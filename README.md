@@ -103,6 +103,7 @@ RSpec.describe 'Todos API', type: :request do
         expect(response).to have_http_status(201)
       end
     end
+    # [...]
 ```
 
 ## Features

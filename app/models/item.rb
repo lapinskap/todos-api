@@ -1,4 +1,5 @@
-class Item < ApplicationRecord
+class Item < ActiveRecord::Base
+
   # model association
   belongs_to :todo
 

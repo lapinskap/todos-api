@@ -1,4 +1,4 @@
-class Todo < ApplicationRecord
+class Todo < ActiveRecord::Base
   # model association
   has_many :items, dependent: :destroy
 

@@ -19,6 +19,8 @@ Shoulda::Matchers.configure do |config|
   end
 end
 
+Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
+
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
 # run as spec files by default. This means that files in spec/support that end
@@ -48,6 +50,8 @@ RSpec.configure do |config|
     DatabaseCleaner.clean_with(:truncation)
     DatabaseCleaner.strategy = :transaction
   end
+
+  config.include RequestSpecHelper, type: :request
 
   # start the transaction strategy as examples are run
   config.around(:each) do |example|

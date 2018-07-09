@@ -44,3 +44,568 @@
   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
   [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (6.7ms)[0m  DELETE FROM "items";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'items';
+  [1m[36m (7.0ms)[0m  [1mDELETE FROM "todos";[0m
+  [1m[35m (0.2ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'todos';[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (23.8ms)[0m  DELETE FROM "items";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'items';
+  [1m[36m (8.2ms)[0m  [1mDELETE FROM "todos";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'todos';[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (6.3ms)[0m  [1m[31mDELETE FROM "items";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'items';[0m
+  [1m[35m (12.2ms)[0m  [1m[31mDELETE FROM "todos";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'todos';[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (13.3ms)[0m  [1m[31mDELETE FROM "items";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'items';[0m
+  [1m[35m (10.1ms)[0m  [1m[31mDELETE FROM "todos";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'todos';[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (17.2ms)[0m  [1m[31mDELETE FROM "items";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'items';[0m
+  [1m[35m (7.6ms)[0m  [1m[31mDELETE FROM "todos";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'todos';[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (10.3ms)[0m  [1m[31mDELETE FROM "items";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'items';[0m
+  [1m[35m (7.2ms)[0m  [1m[31mDELETE FROM "todos";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'todos';[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "aspernatur"], ["created_by", "8868327792"], ["created_at", "2018-07-09 20:15:22.821897"], ["updated_at", "2018-07-09 20:15:22.821897"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "similique"], ["created_by", "6720325632"], ["created_at", "2018-07-09 20:15:22.823927"], ["updated_at", "2018-07-09 20:15:22.823927"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "libero"], ["created_by", "7501634507"], ["created_at", "2018-07-09 20:15:22.825217"], ["updated_at", "2018-07-09 20:15:22.825217"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "atque"], ["created_by", "6345413319"], ["created_at", "2018-07-09 20:15:22.826639"], ["updated_at", "2018-07-09 20:15:22.826639"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "iusto"], ["created_by", "2783214094"], ["created_at", "2018-07-09 20:15:22.828020"], ["updated_at", "2018-07-09 20:15:22.828020"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "tempora"], ["created_by", "7325911015"], ["created_at", "2018-07-09 20:15:22.829374"], ["updated_at", "2018-07-09 20:15:22.829374"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "et"], ["created_by", "2061049651"], ["created_at", "2018-07-09 20:15:22.830888"], ["updated_at", "2018-07-09 20:15:22.830888"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "labore"], ["created_by", "7029491764"], ["created_at", "2018-07-09 20:15:22.832946"], ["updated_at", "2018-07-09 20:15:22.832946"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "voluptas"], ["created_by", "8962265960"], ["created_at", "2018-07-09 20:15:22.835702"], ["updated_at", "2018-07-09 20:15:22.835702"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "unde"], ["created_by", "3131198315"], ["created_at", "2018-07-09 20:15:22.837548"], ["updated_at", "2018-07-09 20:15:22.837548"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Started GET "/todos" for 127.0.0.1 at 2018-07-09 22:15:22 +0200
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ut"], ["created_by", "7803487281"], ["created_at", "2018-07-09 20:15:22.848860"], ["updated_at", "2018-07-09 20:15:22.848860"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "quisquam"], ["created_by", "5480716015"], ["created_at", "2018-07-09 20:15:22.850607"], ["updated_at", "2018-07-09 20:15:22.850607"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "quia"], ["created_by", "2722267709"], ["created_at", "2018-07-09 20:15:22.852168"], ["updated_at", "2018-07-09 20:15:22.852168"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "velit"], ["created_by", "1433192137"], ["created_at", "2018-07-09 20:15:22.853601"], ["updated_at", "2018-07-09 20:15:22.853601"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "quidem"], ["created_by", "1304037003"], ["created_at", "2018-07-09 20:15:22.855084"], ["updated_at", "2018-07-09 20:15:22.855084"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "quis"], ["created_by", "8656375681"], ["created_at", "2018-07-09 20:15:22.856482"], ["updated_at", "2018-07-09 20:15:22.856482"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "dolor"], ["created_by", "2363034104"], ["created_at", "2018-07-09 20:15:22.858216"], ["updated_at", "2018-07-09 20:15:22.858216"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "unde"], ["created_by", "4798280598"], ["created_at", "2018-07-09 20:15:22.859674"], ["updated_at", "2018-07-09 20:15:22.859674"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "et"], ["created_by", "5675280882"], ["created_at", "2018-07-09 20:15:22.860991"], ["updated_at", "2018-07-09 20:15:22.860991"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "eaque"], ["created_by", "9592361152"], ["created_at", "2018-07-09 20:15:22.863209"], ["updated_at", "2018-07-09 20:15:22.863209"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Started GET "/todos" for 127.0.0.1 at 2018-07-09 22:15:22 +0200
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "rem"], ["created_by", "5702407271"], ["created_at", "2018-07-09 20:15:22.868099"], ["updated_at", "2018-07-09 20:15:22.868099"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "facere"], ["created_by", "4520881915"], ["created_at", "2018-07-09 20:15:22.869742"], ["updated_at", "2018-07-09 20:15:22.869742"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "optio"], ["created_by", "4517225477"], ["created_at", "2018-07-09 20:15:22.871285"], ["updated_at", "2018-07-09 20:15:22.871285"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "atque"], ["created_by", "4084167323"], ["created_at", "2018-07-09 20:15:22.873059"], ["updated_at", "2018-07-09 20:15:22.873059"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "tempore"], ["created_by", "6920506870"], ["created_at", "2018-07-09 20:15:22.875859"], ["updated_at", "2018-07-09 20:15:22.875859"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "minus"], ["created_by", "1589794141"], ["created_at", "2018-07-09 20:15:22.878752"], ["updated_at", "2018-07-09 20:15:22.878752"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "optio"], ["created_by", "4140140081"], ["created_at", "2018-07-09 20:15:22.881321"], ["updated_at", "2018-07-09 20:15:22.881321"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "omnis"], ["created_by", "3499015968"], ["created_at", "2018-07-09 20:15:22.883870"], ["updated_at", "2018-07-09 20:15:22.883870"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.5ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "aut"], ["created_by", "4320676781"], ["created_at", "2018-07-09 20:15:22.885971"], ["updated_at", "2018-07-09 20:15:22.885971"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "vel"], ["created_by", "5537379498"], ["created_at", "2018-07-09 20:15:22.888114"], ["updated_at", "2018-07-09 20:15:22.888114"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Started GET "/todos/1" for 127.0.0.1 at 2018-07-09 22:15:22 +0200
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "incidunt"], ["created_by", "6981002737"], ["created_at", "2018-07-09 20:15:22.900124"], ["updated_at", "2018-07-09 20:15:22.900124"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "eum"], ["created_by", "6082855731"], ["created_at", "2018-07-09 20:15:22.901915"], ["updated_at", "2018-07-09 20:15:22.901915"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "in"], ["created_by", "3676402330"], ["created_at", "2018-07-09 20:15:22.903582"], ["updated_at", "2018-07-09 20:15:22.903582"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "eos"], ["created_by", "5528310639"], ["created_at", "2018-07-09 20:15:22.910961"], ["updated_at", "2018-07-09 20:15:22.910961"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "et"], ["created_by", "3244701469"], ["created_at", "2018-07-09 20:15:22.912823"], ["updated_at", "2018-07-09 20:15:22.912823"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "voluptatem"], ["created_by", "1698297203"], ["created_at", "2018-07-09 20:15:22.914749"], ["updated_at", "2018-07-09 20:15:22.914749"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ea"], ["created_by", "6499855742"], ["created_at", "2018-07-09 20:15:22.917812"], ["updated_at", "2018-07-09 20:15:22.917812"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "in"], ["created_by", "5697430653"], ["created_at", "2018-07-09 20:15:22.923984"], ["updated_at", "2018-07-09 20:15:22.923984"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "at"], ["created_by", "8358457213"], ["created_at", "2018-07-09 20:15:22.925683"], ["updated_at", "2018-07-09 20:15:22.925683"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "dolor"], ["created_by", "1704962565"], ["created_at", "2018-07-09 20:15:22.927711"], ["updated_at", "2018-07-09 20:15:22.927711"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Started GET "/todos/1" for 127.0.0.1 at 2018-07-09 22:15:22 +0200
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "sed"], ["created_by", "9013115722"], ["created_at", "2018-07-09 20:15:22.936638"], ["updated_at", "2018-07-09 20:15:22.936638"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "quam"], ["created_by", "6016627674"], ["created_at", "2018-07-09 20:15:22.938342"], ["updated_at", "2018-07-09 20:15:22.938342"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "expedita"], ["created_by", "7334473211"], ["created_at", "2018-07-09 20:15:22.939993"], ["updated_at", "2018-07-09 20:15:22.939993"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "temporibus"], ["created_by", "8825006401"], ["created_at", "2018-07-09 20:15:22.941399"], ["updated_at", "2018-07-09 20:15:22.941399"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "consequatur"], ["created_by", "2123883515"], ["created_at", "2018-07-09 20:15:22.942902"], ["updated_at", "2018-07-09 20:15:22.942902"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "veniam"], ["created_by", "3123033920"], ["created_at", "2018-07-09 20:15:22.944329"], ["updated_at", "2018-07-09 20:15:22.944329"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "omnis"], ["created_by", "5685943982"], ["created_at", "2018-07-09 20:15:22.945853"], ["updated_at", "2018-07-09 20:15:22.945853"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "eos"], ["created_by", "6475031584"], ["created_at", "2018-07-09 20:15:22.952703"], ["updated_at", "2018-07-09 20:15:22.952703"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.5ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "dolorum"], ["created_by", "9886947590"], ["created_at", "2018-07-09 20:15:22.954201"], ["updated_at", "2018-07-09 20:15:22.954201"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "sint"], ["created_by", "3591252883"], ["created_at", "2018-07-09 20:15:22.958151"], ["updated_at", "2018-07-09 20:15:22.958151"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Started GET "/todos/100" for 127.0.0.1 at 2018-07-09 22:15:22 +0200
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.5ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "autem"], ["created_by", "3075974952"], ["created_at", "2018-07-09 20:15:22.965160"], ["updated_at", "2018-07-09 20:15:22.965160"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "quia"], ["created_by", "4765558834"], ["created_at", "2018-07-09 20:15:22.968656"], ["updated_at", "2018-07-09 20:15:22.968656"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "dolorem"], ["created_by", "4775928213"], ["created_at", "2018-07-09 20:15:22.971677"], ["updated_at", "2018-07-09 20:15:22.971677"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.4ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "consequatur"], ["created_by", "7402016948"], ["created_at", "2018-07-09 20:15:22.973550"], ["updated_at", "2018-07-09 20:15:22.973550"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "occaecati"], ["created_by", "9469009960"], ["created_at", "2018-07-09 20:15:22.976608"], ["updated_at", "2018-07-09 20:15:22.976608"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "quaerat"], ["created_by", "9357601984"], ["created_at", "2018-07-09 20:15:22.978313"], ["updated_at", "2018-07-09 20:15:22.978313"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "commodi"], ["created_by", "9925638329"], ["created_at", "2018-07-09 20:15:22.981935"], ["updated_at", "2018-07-09 20:15:22.981935"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "repellat"], ["created_by", "2979036379"], ["created_at", "2018-07-09 20:15:22.983431"], ["updated_at", "2018-07-09 20:15:22.983431"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.4ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "odio"], ["created_by", "9965968251"], ["created_at", "2018-07-09 20:15:22.984961"], ["updated_at", "2018-07-09 20:15:22.984961"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "occaecati"], ["created_by", "2928846314"], ["created_at", "2018-07-09 20:15:22.986998"], ["updated_at", "2018-07-09 20:15:22.986998"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Started GET "/todos/100" for 127.0.0.1 at 2018-07-09 22:15:22 +0200
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "cum"], ["created_by", "7065874634"], ["created_at", "2018-07-09 20:15:22.992002"], ["updated_at", "2018-07-09 20:15:22.992002"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "quia"], ["created_by", "4185758850"], ["created_at", "2018-07-09 20:15:22.993810"], ["updated_at", "2018-07-09 20:15:22.993810"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "impedit"], ["created_by", "8051520634"], ["created_at", "2018-07-09 20:15:22.996490"], ["updated_at", "2018-07-09 20:15:22.996490"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "necessitatibus"], ["created_by", "8287855833"], ["created_at", "2018-07-09 20:15:22.998433"], ["updated_at", "2018-07-09 20:15:22.998433"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "voluptatem"], ["created_by", "1868884461"], ["created_at", "2018-07-09 20:15:23.000043"], ["updated_at", "2018-07-09 20:15:23.000043"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "voluptate"], ["created_by", "7191784967"], ["created_at", "2018-07-09 20:15:23.001810"], ["updated_at", "2018-07-09 20:15:23.001810"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "doloremque"], ["created_by", "1979817897"], ["created_at", "2018-07-09 20:15:23.003679"], ["updated_at", "2018-07-09 20:15:23.003679"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "explicabo"], ["created_by", "9330818969"], ["created_at", "2018-07-09 20:15:23.005310"], ["updated_at", "2018-07-09 20:15:23.005310"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "aut"], ["created_by", "2059080183"], ["created_at", "2018-07-09 20:15:23.007304"], ["updated_at", "2018-07-09 20:15:23.007304"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "consequatur"], ["created_by", "6626772096"], ["created_at", "2018-07-09 20:15:23.009062"], ["updated_at", "2018-07-09 20:15:23.009062"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Started POST "/todos" for 127.0.0.1 at 2018-07-09 22:15:23 +0200
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ratione"], ["created_by", "7126248010"], ["created_at", "2018-07-09 20:15:23.028267"], ["updated_at", "2018-07-09 20:15:23.028267"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "harum"], ["created_by", "2986484828"], ["created_at", "2018-07-09 20:15:23.029953"], ["updated_at", "2018-07-09 20:15:23.029953"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "temporibus"], ["created_by", "6852616789"], ["created_at", "2018-07-09 20:15:23.031569"], ["updated_at", "2018-07-09 20:15:23.031569"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "officiis"], ["created_by", "5626130507"], ["created_at", "2018-07-09 20:15:23.034289"], ["updated_at", "2018-07-09 20:15:23.034289"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "aliquam"], ["created_by", "5918413128"], ["created_at", "2018-07-09 20:15:23.036170"], ["updated_at", "2018-07-09 20:15:23.036170"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "voluptate"], ["created_by", "3823942747"], ["created_at", "2018-07-09 20:15:23.037946"], ["updated_at", "2018-07-09 20:15:23.037946"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "nam"], ["created_by", "5486293517"], ["created_at", "2018-07-09 20:15:23.039478"], ["updated_at", "2018-07-09 20:15:23.039478"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "et"], ["created_by", "6137452591"], ["created_at", "2018-07-09 20:15:23.041012"], ["updated_at", "2018-07-09 20:15:23.041012"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "veritatis"], ["created_by", "2765201066"], ["created_at", "2018-07-09 20:15:23.049040"], ["updated_at", "2018-07-09 20:15:23.049040"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "enim"], ["created_by", "4058295802"], ["created_at", "2018-07-09 20:15:23.051459"], ["updated_at", "2018-07-09 20:15:23.051459"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Started POST "/todos" for 127.0.0.1 at 2018-07-09 22:15:23 +0200
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (10.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "eos"], ["created_by", "5380934119"], ["created_at", "2018-07-09 20:15:23.069415"], ["updated_at", "2018-07-09 20:15:23.069415"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "consequatur"], ["created_by", "9612430007"], ["created_at", "2018-07-09 20:15:23.071586"], ["updated_at", "2018-07-09 20:15:23.071586"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "magni"], ["created_by", "5250742861"], ["created_at", "2018-07-09 20:15:23.073280"], ["updated_at", "2018-07-09 20:15:23.073280"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "sit"], ["created_by", "7591469974"], ["created_at", "2018-07-09 20:15:23.075366"], ["updated_at", "2018-07-09 20:15:23.075366"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "tempore"], ["created_by", "3565044119"], ["created_at", "2018-07-09 20:15:23.077126"], ["updated_at", "2018-07-09 20:15:23.077126"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "distinctio"], ["created_by", "9256521553"], ["created_at", "2018-07-09 20:15:23.079348"], ["updated_at", "2018-07-09 20:15:23.079348"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "id"], ["created_by", "4402037615"], ["created_at", "2018-07-09 20:15:23.081498"], ["updated_at", "2018-07-09 20:15:23.081498"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "delectus"], ["created_by", "9153601246"], ["created_at", "2018-07-09 20:15:23.083900"], ["updated_at", "2018-07-09 20:15:23.083900"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "quod"], ["created_by", "9299650594"], ["created_at", "2018-07-09 20:15:23.086298"], ["updated_at", "2018-07-09 20:15:23.086298"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "pariatur"], ["created_by", "9014957151"], ["created_at", "2018-07-09 20:15:23.088462"], ["updated_at", "2018-07-09 20:15:23.088462"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Started POST "/todos" for 127.0.0.1 at 2018-07-09 22:15:23 +0200
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "eum"], ["created_by", "5932327057"], ["created_at", "2018-07-09 20:15:23.094332"], ["updated_at", "2018-07-09 20:15:23.094332"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "voluptate"], ["created_by", "4000961120"], ["created_at", "2018-07-09 20:15:23.097261"], ["updated_at", "2018-07-09 20:15:23.097261"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "in"], ["created_by", "3863873623"], ["created_at", "2018-07-09 20:15:23.099450"], ["updated_at", "2018-07-09 20:15:23.099450"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "autem"], ["created_by", "4981866796"], ["created_at", "2018-07-09 20:15:23.101499"], ["updated_at", "2018-07-09 20:15:23.101499"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "autem"], ["created_by", "5246760014"], ["created_at", "2018-07-09 20:15:23.103605"], ["updated_at", "2018-07-09 20:15:23.103605"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "facilis"], ["created_by", "3701966764"], ["created_at", "2018-07-09 20:15:23.105495"], ["updated_at", "2018-07-09 20:15:23.105495"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "quo"], ["created_by", "3974038166"], ["created_at", "2018-07-09 20:15:23.107566"], ["updated_at", "2018-07-09 20:15:23.107566"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "iure"], ["created_by", "3379688808"], ["created_at", "2018-07-09 20:15:23.109564"], ["updated_at", "2018-07-09 20:15:23.109564"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "rem"], ["created_by", "5600029973"], ["created_at", "2018-07-09 20:15:23.111537"], ["updated_at", "2018-07-09 20:15:23.111537"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "non"], ["created_by", "6695620405"], ["created_at", "2018-07-09 20:15:23.113830"], ["updated_at", "2018-07-09 20:15:23.113830"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Started POST "/todos" for 127.0.0.1 at 2018-07-09 22:15:23 +0200
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.4ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ea"], ["created_by", "9494469045"], ["created_at", "2018-07-09 20:15:23.120146"], ["updated_at", "2018-07-09 20:15:23.120146"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "officiis"], ["created_by", "9595399077"], ["created_at", "2018-07-09 20:15:23.123333"], ["updated_at", "2018-07-09 20:15:23.123333"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "qui"], ["created_by", "7156502928"], ["created_at", "2018-07-09 20:15:23.126421"], ["updated_at", "2018-07-09 20:15:23.126421"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "accusamus"], ["created_by", "2098782515"], ["created_at", "2018-07-09 20:15:23.128969"], ["updated_at", "2018-07-09 20:15:23.128969"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "non"], ["created_by", "7189647265"], ["created_at", "2018-07-09 20:15:23.130735"], ["updated_at", "2018-07-09 20:15:23.130735"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "adipisci"], ["created_by", "8852939891"], ["created_at", "2018-07-09 20:15:23.132341"], ["updated_at", "2018-07-09 20:15:23.132341"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "perspiciatis"], ["created_by", "4026155406"], ["created_at", "2018-07-09 20:15:23.133962"], ["updated_at", "2018-07-09 20:15:23.133962"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "quod"], ["created_by", "1069763219"], ["created_at", "2018-07-09 20:15:23.135699"], ["updated_at", "2018-07-09 20:15:23.135699"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "quia"], ["created_by", "9508183610"], ["created_at", "2018-07-09 20:15:23.137414"], ["updated_at", "2018-07-09 20:15:23.137414"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "soluta"], ["created_by", "9387617588"], ["created_at", "2018-07-09 20:15:23.139395"], ["updated_at", "2018-07-09 20:15:23.139395"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Started PUT "/todos/1" for 127.0.0.1 at 2018-07-09 22:15:23 +0200
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "aut"], ["created_by", "7285582949"], ["created_at", "2018-07-09 20:15:23.144128"], ["updated_at", "2018-07-09 20:15:23.144128"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ipsum"], ["created_by", "9013386218"], ["created_at", "2018-07-09 20:15:23.146424"], ["updated_at", "2018-07-09 20:15:23.146424"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "itaque"], ["created_by", "6765489702"], ["created_at", "2018-07-09 20:15:23.148453"], ["updated_at", "2018-07-09 20:15:23.148453"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "a"], ["created_by", "1618450061"], ["created_at", "2018-07-09 20:15:23.150497"], ["updated_at", "2018-07-09 20:15:23.150497"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "harum"], ["created_by", "7483440362"], ["created_at", "2018-07-09 20:15:23.152558"], ["updated_at", "2018-07-09 20:15:23.152558"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "quis"], ["created_by", "5557339037"], ["created_at", "2018-07-09 20:15:23.154565"], ["updated_at", "2018-07-09 20:15:23.154565"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ducimus"], ["created_by", "9091074514"], ["created_at", "2018-07-09 20:15:23.156909"], ["updated_at", "2018-07-09 20:15:23.156909"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "et"], ["created_by", "6462798829"], ["created_at", "2018-07-09 20:15:23.159062"], ["updated_at", "2018-07-09 20:15:23.159062"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.4ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "sint"], ["created_by", "3639038350"], ["created_at", "2018-07-09 20:15:23.161034"], ["updated_at", "2018-07-09 20:15:23.161034"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "sapiente"], ["created_by", "6751743659"], ["created_at", "2018-07-09 20:15:23.163346"], ["updated_at", "2018-07-09 20:15:23.163346"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Started PUT "/todos/1" for 127.0.0.1 at 2018-07-09 22:15:23 +0200
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "voluptatem"], ["created_by", "8507474072"], ["created_at", "2018-07-09 20:15:23.168577"], ["updated_at", "2018-07-09 20:15:23.168577"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "veritatis"], ["created_by", "5050508847"], ["created_at", "2018-07-09 20:15:23.170683"], ["updated_at", "2018-07-09 20:15:23.170683"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "animi"], ["created_by", "5793188547"], ["created_at", "2018-07-09 20:15:23.172560"], ["updated_at", "2018-07-09 20:15:23.172560"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "quod"], ["created_by", "8798904025"], ["created_at", "2018-07-09 20:15:23.174496"], ["updated_at", "2018-07-09 20:15:23.174496"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "voluptates"], ["created_by", "5397794584"], ["created_at", "2018-07-09 20:15:23.177981"], ["updated_at", "2018-07-09 20:15:23.177981"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "in"], ["created_by", "7212065829"], ["created_at", "2018-07-09 20:15:23.180921"], ["updated_at", "2018-07-09 20:15:23.180921"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "voluptas"], ["created_by", "3049360462"], ["created_at", "2018-07-09 20:15:23.183079"], ["updated_at", "2018-07-09 20:15:23.183079"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "consectetur"], ["created_by", "1596528032"], ["created_at", "2018-07-09 20:15:23.184819"], ["updated_at", "2018-07-09 20:15:23.184819"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.8ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "quis"], ["created_by", "1871965072"], ["created_at", "2018-07-09 20:15:23.186727"], ["updated_at", "2018-07-09 20:15:23.186727"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTodo Create (0.1ms)[0m  [1m[32mINSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "nisi"], ["created_by", "5723738901"], ["created_at", "2018-07-09 20:15:23.189416"], ["updated_at", "2018-07-09 20:15:23.189416"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Started DELETE "/todos/1" for 127.0.0.1 at 2018-07-09 22:15:23 +0200
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m

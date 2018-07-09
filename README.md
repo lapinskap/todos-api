@@ -111,6 +111,7 @@ List of features ready and TODOs for future development
 * rspec tests
 * TDD to implement the todo API
 *  JWT
+* [httpie](https://httpie.org/doc#installation)
 
 To-do list:
 * Continue this project!

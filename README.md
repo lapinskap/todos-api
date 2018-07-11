@@ -14,6 +14,11 @@
 ## General info
 The main objective: Generate an API-only Rails application, set up a test framework, use TDD to implement the todo API, add token-based authentication with JWT, version this API, serialize with active model serializers, and add pagination features.
 
+Generate an API application with Rails 5
+Setup RSpec testing framework with Factory Bot, Database Cleaner, Shoulda Matchers and Faker.
+Build models and controllers with TDD (Test Driven Development).
+Make HTTP requests to an API with httpie.
+
 ## Screenshots
 ![Example screenshot](./img/screenshot.png)
 
@@ -112,6 +117,13 @@ List of features ready and TODOs for future development
 * TDD to implement the todo API
 *  JWT
 * [httpie](https://httpie.org/doc#installation)
+
+ Created authentication system by adding the following service classes:
+
+* JsonWebToken - Encode and decode jwt tokens
+* AuthorizeApiRequest - Authorize each API request
+* AuthenticateUser - Authenticate users
+* AuthenticationController - Orchestrate authentication process
 
 To-do list:
 * Continue this project!

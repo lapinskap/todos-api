@@ -125,7 +125,8 @@ List of features ready and TODOs for future development
 * AuthenticateUser - Authenticate users
 * AuthenticationController - Orchestrate authentication process
 
-About JsonWebToken
+#### About JsonWebToken
+
 Our class will live in the ```lib``` directory since it's not domain specific; if we were to move it to a different application it should work with minimal configuration. There's a small caveat, though...
 
 > As of Rails 5, [autoloading is disabled in production](http://edgeguides.rubyonrails.org/upgrading_ruby_on_rails.html#autoloading-is-disabled-after-booting-in-the-production-environment) because of thread safety.

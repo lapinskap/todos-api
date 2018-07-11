@@ -3,13 +3,13 @@ class TodosController < ApplicationController
 
   # GET /todos
   def index
-    @todos = Todo.all
+    @todos = current_user.todos
     json_response(@todos)
   end
 
   # POST /todos
   def create
-    @todo = Todo.create!(todo_params)
+    @todo = current_user.todos.create!(todo_params)
     json_response(@todo, :created)
   end
 
@@ -31,10 +31,10 @@ class TodosController < ApplicationController
   end
 
   private
-
-  def todo_params
-    # whitelist params
-    params.permit(:title, :created_by)
+  
+   # remove `created_by` from list of permitted parameters
+   def todo_params
+    params.permit(:title)
   end
 
   def set_todo

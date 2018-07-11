@@ -17,7 +17,6 @@ The main objective: Generate an API-only Rails application, set up a test framew
 Generate an API application with Rails 5
 Setup RSpec testing framework with Factory Bot, Database Cleaner, Shoulda Matchers and Faker.
 Build models and controllers with TDD (Test Driven Development).
-Make HTTP requests to an API with httpie.
 
 ## Screenshots
 ![Example screenshot](./img/screenshot.png)
@@ -115,8 +114,9 @@ RSpec.describe 'Todos API', type: :request do
 List of features ready and TODOs for future development
 * rspec tests
 * TDD to implement the todo API
-*  JWT
-* [httpie](https://httpie.org/doc#installation)
+*  JWT (gem name)
+* [httpie](https://httpie.org/doc#installation) - Make HTTP requests to an API with httpie
+* [token based authentication](https://stackoverflow.com/questions/1592534/what-is-token-based-authentication)
 
  Created authentication system by adding the following service classes:
 
@@ -124,6 +124,13 @@ List of features ready and TODOs for future development
 * AuthorizeApiRequest - Authorize each API request
 * AuthenticateUser - Authenticate users
 * AuthenticationController - Orchestrate authentication process
+
+About JsonWebToken
+Our class will live in the ```lib``` directory since it's not domain specific; if we were to move it to a different application it should work with minimal configuration. There's a small caveat, though...
+
+> As of Rails 5, [autoloading is disabled in production](http://edgeguides.rubyonrails.org/upgrading_ruby_on_rails.html#autoloading-is-disabled-after-booting-in-the-production-environment) because of thread safety.
+
+This is a huge concern for us since lib is part of auto-load paths. To counter this change, we'll add our lib in app since all code in app is auto-loaded in development and eager-loaded in production. [Here's a long discussion](https://github.com/rails/rails/issues/131420)
 
 To-do list:
 * Continue this project!

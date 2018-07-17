@@ -140,7 +140,7 @@ To-do list:
 Project is: _in progress_
 
 ## Inspiration
-Project based on [scotch.io tutorial(https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-three)
+Project based on [scotch.io tutorial](https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-three)
 
 ## Contact
 Created by [@lapinskap](https://www.facebook.com/paulina.lapinska99) - feel free to contact me!

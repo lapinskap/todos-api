@@ -3,9 +3,10 @@ class TodosController < ApplicationController
   before_action :set_todo, only: [:show, :update, :destroy]
 
   # GET /todos
-  def index
-    @todos = current_user.todos
-    json_response(@todos)
+ def index
+  # get paginated current user todos
+  @todos = current_user.todos.paginate(page: params[:page], per_page: 20)
+  json_response(@todos)
   end
 
   # POST /todos
